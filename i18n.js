@@ -18,7 +18,10 @@
     document.querySelector('#searchInput').setAttribute('aria-label',t('findSomething'));
     document.querySelector('#categoryFilter').setAttribute('aria-label',t('allCategories'));
     const dark=document.body.classList.contains('dark-mode');
-    document.querySelector('#themeToggle').textContent=(dark?'☀ ':'☾ ')+t(dark?'lightMode':'darkMode');
+    const themeToggle=document.querySelector('#themeToggle');
+    themeToggle.querySelector('.theme-icon').textContent=dark?'☀':'☾';
+    themeToggle.querySelector('.theme-label').textContent=t(dark?'lightMode':'darkMode');
+    themeToggle.setAttribute('aria-label',t(dark?'lightMode':'darkMode'));
     window.dispatchEvent(new CustomEvent('languagechange'));
   }
   function translateDynamic(){
