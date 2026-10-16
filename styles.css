@@ -33,3 +33,5 @@ body.dark-mode{--ink:#e6e1e9;--muted:#c9c5d0;--line:#49454f;--paper:#141218;--gr
 
 @media(max-width:600px){.brand-name{display:none}.theme-toggle{display:grid;place-items:center;width:36px;height:36px;padding:0}.theme-icon{font-size:19px;line-height:1}.theme-label{display:none}}
 
+.product-footer .shop-link{width:100%;justify-content:center}
+
